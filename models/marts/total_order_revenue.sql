@@ -1,5 +1,5 @@
 with orders as (
-    select * from fct_orders
+    select * from {{ ref('jaffle_shop', 'orders') }}
 ), 
 
 agg as (
